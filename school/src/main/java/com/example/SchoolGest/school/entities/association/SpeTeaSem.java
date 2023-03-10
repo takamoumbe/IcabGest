@@ -1,8 +1,8 @@
 package com.example.SchoolGest.school.entities.association;
 
-import com.example.SchoolGest.school.entities.Program;
-import com.example.SchoolGest.school.entities.Semester;
-import com.example.SchoolGest.school.entities.TeachingUnit;
+import com.example.SchoolGest.school.entities.modules.emploiTemp.Program;
+import com.example.SchoolGest.school.entities.modules.notes.Semester;
+import com.example.SchoolGest.school.entities.modules.notes.TeachingUnit;
 import com.example.SchoolGest.school.entities.key.SpeTeaSemKey;
 
 import javax.persistence.*;

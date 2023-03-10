@@ -1,4 +1,4 @@
-package com.example.SchoolGest.school.entities;
+package com.example.SchoolGest.school.entities.modules.notes;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

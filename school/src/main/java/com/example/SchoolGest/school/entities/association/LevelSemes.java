@@ -1,7 +1,7 @@
 package com.example.SchoolGest.school.entities.association;
 
-import com.example.SchoolGest.school.entities.Level;
-import com.example.SchoolGest.school.entities.Semester;
+import com.example.SchoolGest.school.entities.modules.notes.Level;
+import com.example.SchoolGest.school.entities.modules.notes.Semester;
 import com.example.SchoolGest.school.entities.key.LevelSemesKey;
 
 import javax.persistence.*;
