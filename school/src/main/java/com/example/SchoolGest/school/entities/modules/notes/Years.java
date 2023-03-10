@@ -1,5 +1,6 @@
-package com.example.SchoolGest.school.entities;
+package com.example.SchoolGest.school.entities.modules.notes;
 
+import com.example.SchoolGest.school.entities.modules.emploiTemp.Program;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

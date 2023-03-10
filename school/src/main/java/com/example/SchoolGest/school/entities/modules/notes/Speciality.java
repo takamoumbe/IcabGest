@@ -1,4 +1,4 @@
-package com.example.SchoolGest.school.entities;
+package com.example.SchoolGest.school.entities.modules.notes;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,25 +12,18 @@ import javax.persistence.*;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="query")
-public class Query {
-
+@Table(name="speciality")
+public class Speciality {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "query_id", nullable = false)
+    @Column(name = "speciality_id", nullable = false)
 
-    private int id_query;
-    @Column(nullable = false)
+    private int speciality_id;
     private String name;
-    private String pattern;
-    private String etat_query;
-    private int status_query;
-    @ManyToOne
-    @JoinColumn(name = "student_id", nullable = false)
-    private Student student;
+    private String coded;
+    private int status_speciality;
+    private String etat_speciality;
     private String create_at;
     private String update_at;
     private String delete_at;
-
-
 }
