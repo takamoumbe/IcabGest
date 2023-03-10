@@ -1,29 +1,28 @@
 package com.example.SchoolGest.school.entities.association;
 
-import com.example.SchoolGest.school.entities.modules.notes.Day;
 import com.example.SchoolGest.school.entities.modules.emploiTemp.Period;
-import com.example.SchoolGest.school.entities.key.PeriodDayKey;
+import com.example.SchoolGest.school.entities.modules.emploiTemp.Program;
+import com.example.SchoolGest.school.entities.key.ProgramPeriodKey;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name="periodDay")
-public class PeriodDay {
+@Table(name = "programPeriod")
+public class ProgramPeriod {
     @EmbeddedId
-    private PeriodDayKey periodDayKey;
+    private ProgramPeriodKey programPeriodKey;
 
     @ManyToOne()
-    @MapsId("day_id")
-    @JoinColumn(name = "day_id")
-    private Day day;
+    @MapsId("program_id")
+    @JoinColumn(name = "program_id")
+    private Program program;
+
     @ManyToOne()
     @MapsId("period_id")
     @JoinColumn(name = "period_id")
     private Period period;
-    @Column(nullable = false)
+
     private String create_at;
-    private String delete_at;
     private String update_at;
-
-
+    private String delete_at;
 }

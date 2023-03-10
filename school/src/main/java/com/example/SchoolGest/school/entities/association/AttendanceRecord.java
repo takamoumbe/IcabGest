@@ -1,7 +1,7 @@
 package com.example.SchoolGest.school.entities.association;
 
-import com.example.SchoolGest.school.entities.Period;
-import com.example.SchoolGest.school.entities.Student;
+import com.example.SchoolGest.school.entities.modules.emploiTemp.Period;
+import com.example.SchoolGest.school.entities.modules.notes.Student;
 import com.example.SchoolGest.school.entities.key.AttendanceRecordKey;
 
 import javax.persistence.*;
